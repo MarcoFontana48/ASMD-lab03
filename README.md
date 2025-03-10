@@ -835,4 +835,11 @@ public class EvenFailingPolicyUnitTest {
 The generated tests are good, covering all the methods implemented but they're not using assertions like 'assertAll' to 
 group the assertions together, so a small human intervention is needed to improve the tests.
 
-# Task \#1 - Code Generation
+## Conclusions
+The implementations for the Device interface provided vary based on the approach and model used:
+- smaller models do not perform well independently of the approach used
+- bigger models perform different based on the approach, where in this case the 'few shot' approach seemed to be the one that produces the best implementations.
+
+A custom implementation 'MyDevice' was produced starting from the result obtained with the 'few shot' approach using qwen's response.
+
+# Task \#2 was developed on a different repository, check this link: https://github.com/MarcoFontana48/ASMD-lab03-task02
