@@ -503,13 +503,16 @@ the generated code is much better than the previous zero-shot attempt, but it is
 have a field for the FailingPolicy so it will not compile.
 
 ## Chain of thought
-Q: Provide a single implementation for this java interface of a Device, solve this step-by-step, implementing a method at the time: "public interface Device {
+```text
+Q: Provide a single implementation for this java interface of a Device: "public interface Device {
     void on() throws IllegalStateException;
     void off();
     boolean isOn();
     void reset();
     }
 "
+The light starts off, when the method 'on()' is called the light turns on, and when the reset method is called, the light is set to 'off' whatever the previous state of the light was.
+```
 
 ### smollm:135m
 A: 
